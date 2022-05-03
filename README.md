@@ -19,6 +19,6 @@ Repositório do backend para o Projeto Burger
 
 - npm run dev
 
-Porta: 3000
+Porta: 3001
 
 ## Projeto ainda em desenvolvimento!
