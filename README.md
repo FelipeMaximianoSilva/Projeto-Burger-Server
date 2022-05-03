@@ -1,4 +1,4 @@
-# Projeto Burger (BackEnd)
+# Projeto Burger (Back-End)
 
 Repositório do backend para o Projeto Burger
 
