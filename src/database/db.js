@@ -1,14 +1,14 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export function connectToDatabase() {
   mongoose
-    .connect(
-      'mongodb+srv://felipemaximiano:556758595a@cluster0.cetlg.mongodb.net/test',
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      },
-    )
+    .connect(process.env.DB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
     .then(() => {
       console.log('MongoDB conectado');
     })
