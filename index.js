@@ -12,7 +12,6 @@ import { router } from './src/routes/lanches.routes.js';
 
 // Importando o Banco de Dados
 import { connectToDatabase } from './src/database/db.js';
-import { lanches } from './src/model/lanches.js';
 connectToDatabase();
 
 // Informa a pasta raiz
