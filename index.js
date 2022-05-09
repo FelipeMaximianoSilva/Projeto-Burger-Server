@@ -12,13 +12,14 @@ import { router } from './src/routes/lanches.routes.js';
 
 // Importando o Banco de Dados
 import { connectToDatabase } from './src/database/db.js';
-connectToDatabase();
 
 // Informa a pasta raiz
 const __dirname = path.resolve(path.dirname(''));
 
 // Criar uma variável e instanciar (ou seja: passar todos as funções da função express para o variável app)
 const app = express();
+
+connectToDatabase();
 
 // Serve para que a informação que vem do body da requisição - ou seja, informação que usário nos envia - vire JSON
 app.use(express.json());
