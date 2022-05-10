@@ -21,7 +21,6 @@ export const getFindLanchesByID = async (req, res) => {
   const idParam = req.params.id;
 
   const chosenLanche = await findLanchesByIdService(idParam);
-  console.log(idParam);
   if (!chosenLanche) {
     return res.status(404).send({ message: 'Lanche não encontrado!' });
   }

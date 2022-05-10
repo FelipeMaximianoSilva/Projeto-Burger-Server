@@ -18,7 +18,7 @@ export const createLanchesService = async (newLanche) => {
 };
 
 export const updateLanchesService = async (id, lanchesEdited) => {
-  const lancheAtualizado = await findByIdAndUpdate(id, lanchesEdited);
+  const lancheAtualizado = await lanches.findByIdAndUpdate(id, lanchesEdited);
   return lancheAtualizado;
 };
 
