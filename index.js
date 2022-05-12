@@ -40,7 +40,7 @@ app.use(router);
 app.use(cors());
 
 // Variável porta = indica qual porta o nosso servidor vai rodar /  (3000 - 4999)
-const port = 3001;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`Estou rodando dentro da port ${port}`);
