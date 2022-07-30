@@ -19,4 +19,3 @@ Repositório do backend para o Projeto Burger
 
 - npm run dev
 
-## Projeto ainda em desenvolvimento!
